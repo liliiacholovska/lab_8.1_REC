@@ -30,13 +30,9 @@ int main() {
     int thirdDotIndex = FindThirdDotIndexRec(str);
     cout << "Index of the third dot: " << thirdDotIndex << endl;
 
-    char* modifiedStr = new char[strlen(str) + 1];
-    strcpy(modifiedStr, str);
+    ReplaceEveryFourthCharWithDotRec(str);
+    cout << "Modified string: " << str << endl;
+    cout << "Modified string (result): " << str << endl;
 
-    ReplaceEveryFourthCharWithDotRec(modifiedStr);
-    cout << "Modified string: " << modifiedStr << endl;
-    cout << "Modified string(result) : " << modifiedStr << endl;
-
-    delete[] modifiedStr;
     return 0;
 }
